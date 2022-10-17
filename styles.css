@@ -11,6 +11,7 @@ main section{
         background-image: url(img/hero.jpg);
         background-repeat:no-repeat ;
         background-size:cover;
+      width: 1905px; height: 500px;
 }
 
 main{
@@ -20,21 +21,47 @@ main{
 h1{
 
 display: grid;
-grid-template-columns: 148px 148px 483px;
-grid-template-rows: 48px 42px 109px 42px;
+grid-template-columns: 440px 145px 470px;
+grid-template-rows:50px  80px 120px 140px 45px;
 justify-items: center;
 align-items: center;
+
 
 }
 .q1{
 grid-column: 1/4;
-grid-row: 1/2;
+grid-row: 2/3;
+font-size: 40px;
 }
 .q2{
 grid-column: 3/4;
-grid-row: 2/3;
+grid-row: 3/4;
+font-size: 80px;
 }
 .q3{
  grid-column: 3/4;  
- grid-row:  3/4;
+ grid-row:  4/4;
+ font-size: 80px;
+}
+
+.q4{
+grid-column: 3/4;
+grid-row: 5/6;
+font-size: 40px;
+}
+
+.q5{
+        grid-column: 3/2;
+        grid-row: 3/3;
+        font-size: 40px;
+
+}
+
+.span::before{
+content: icon;
+background-image: url(img/flecha.png);
+position: absolute;
+left: 0px;
+width: 50px;
+height: 50px;
 }
