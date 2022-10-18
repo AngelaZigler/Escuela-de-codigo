@@ -2,16 +2,29 @@ img{
     width: 300px; height: 100px;
 
 }
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: rgb(7, 141, 96);
+}
+
     
 .barra{
     display: inline;
 }
 
 main section{
-        background-image: url(img/hero.jpg);
+        background-image: url("https://escuelasdecodigo.cdmx.gob.mx/wp-content/themes/escuelasdecodigo/dist/assets/hero.jpg");
         background-repeat:no-repeat ;
         background-size:cover;
       width: 1905px; height: 500px;
+      
 }
 
 main{
@@ -22,9 +35,10 @@ h1{
 
 display: grid;
 grid-template-columns: 440px 145px 470px;
-grid-template-rows:50px  80px 120px 140px 45px;
+grid-template-rows: 50px  80px 80px 110px 50px;
 justify-items: center;
 align-items: center;
+
 
 
 }
@@ -32,6 +46,7 @@ align-items: center;
 grid-column: 1/4;
 grid-row: 2/3;
 font-size: 40px;
+position: relative;
 }
 .q2{
 grid-column: 3/4;
@@ -57,11 +72,22 @@ font-size: 40px;
 
 }
 
-.span::before{
-content: icon;
-background-image: url(img/flecha.png);
+.q1::before{
+content:"";
+background-image: url("https://escuelasdecodigo.cdmx.gob.mx/wp-content/themes/escuelasdecodigo/dist/assets/hero-vector.svg");
 position: absolute;
-left: 0px;
-width: 50px;
-height: 50px;
+background-repeat: no-repeat;
+top: -10px;
+left: -36px;
+width: 1200px;
+height: 1200px;
+
+}
+
+h2{
+text-align: center;
+color: rgb(172, 120, 41);
+}
+p{
+    text-align: center;
 }
